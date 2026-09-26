@@ -1,15 +1,16 @@
+import PageDetailBtn from "@/app/components/PageDetailBtn"
 import { oswald } from "@/app/layout"
-import { Workout } from "@/app/type/type"
+import { Workout } from "@/type/type"
+import { Metadata } from "next";
 import Image from "next/image"
-import { FaRegBookmark } from "react-icons/fa6"
-import { LuCalendarPlus2 } from "react-icons/lu"
+
 
 
 
 
 const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
     const { wId } = await params
-    const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${wId}`)
+    const res = await fetch(`https://api.api-store.workers.dev/api/fitlog/${wId}`)
     const work: Workout = await res.json()
 
     return (
@@ -139,16 +140,8 @@ const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
 
                     <div className="mt-5 flex gap-3">
 
-                        <button className=" btn flex items-center gap-2 rounded-md bg-[#CCff00] px-4 py-2 text-[14px] font-bold text-black transition hover:bg-[#c7ff33]">
-                            <LuCalendarPlus2 size={15} />
-                            Add to today's plan
-                        </button>
 
-                        <button className=" btn flex items-center gap-2 rounded-md border border-[#343841] px-4 py-2 font-medium text-[14px] text-gray-300 transition hover:bg-[#1b1e24]">
-                            <FaRegBookmark size={15} />
-                            Save for later
-                        </button>
-
+                        <PageDetailBtn key={work.id} work={work}></PageDetailBtn>
                     </div>
 
                 </div>

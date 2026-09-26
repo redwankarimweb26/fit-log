@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import BannerImg from '@/app/assest/banner.png'
@@ -31,13 +32,13 @@ const Banner = () => {
                 </div>
 
 
-                <div className=" flex w-full justify-center md:w-825.5">
+                <div className=" flex w-full justify-center md:w-[330px]">
                     <Image
                         src={BannerImg}
                         alt="Workout "
                         width={300}
                         height={300}
-                        className="h-57.5 w-auto object-contain md:h-67.5"
+                        className="h-[230px] w-auto object-contain md:h-[270px]"
                     />
                 </div>
 

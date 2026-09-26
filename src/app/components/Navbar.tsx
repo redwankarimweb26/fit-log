@@ -2,7 +2,11 @@ import Image from "next/image"
 import Logo from '@/app/assest/logo.png'
 import { oswald } from '@/app/layout'
 import NavBtn from "./NavBtn"
+import NavPlanBtn from "./NavPlanBtn"
+
 const Navbar = () => {
+
+
 
     const navLink =
         <>
@@ -39,9 +43,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-3">
-                    <span>Plan   <a className=" bg-[#C2F800] text-black rounded-full px-2 mx-2 py-1">0</a></span>
-                    <span>Save  <a className=" border border-gray-500 rounded-full px-2 ml-2 py-1">0</a></span>
 
+                    <NavPlanBtn></NavPlanBtn>
                 </div>
             </div>
         </div>

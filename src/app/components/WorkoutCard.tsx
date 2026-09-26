@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaClock, FaFire, FaStar } from "react-icons/fa6";
-import { Workout } from "../type/type";
+import { Workout } from "../../type/type";
 import { oswald } from "../layout";
 import Link from "next/link";
 
