@@ -31,13 +31,13 @@ const Banner = () => {
                 </div>
 
 
-                <div className=" flex w-full justify-center md:w-[330px]">
+                <div className=" flex w-full justify-center md:w-825.5">
                     <Image
                         src={BannerImg}
                         alt="Workout "
                         width={300}
                         height={300}
-                        className="h-[230px] w-auto object-contain md:h-[270px]"
+                        className="h-57.5 w-auto object-contain md:h-67.5"
                     />
                 </div>
 
