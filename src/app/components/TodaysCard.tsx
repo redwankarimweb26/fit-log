@@ -1,8 +1,9 @@
 import { Workout } from "@/type/type"
 import Image from "next/image"
-import { FaCheck, FaXmark } from "react-icons/fa6"
+
 import { LuClock3, LuStar } from "react-icons/lu"
 import { PiFire } from "react-icons/pi"
+import TodayCardBtn from "./TodayCardBtn"
 
 
 interface TodaysCardProps {
@@ -54,19 +55,7 @@ const TodaysCard = ({ workout }: TodaysCardProps) => {
             </div>
             <div className="flex shrink-0 items-center gap-2">
 
-                <button className="rounded-full border border-[#343A46] px-4 py-2 text-xs text-gray-300 transition hover:bg-[#1F242D]">
-                    View Details
-                </button>
-
-                <button className="flex items-center gap-2 rounded-full bg-[#C2F800] px-4 py-2 text-xs font-bold text-black transition hover:bg-[#d0ff33]">
-                    <FaCheck size={11} />
-                    Mark as Done
-                </button>
-
-                <button className="ml-1 p-2 text-[#747B88] transition hover:text-white">
-                    <FaXmark size={13} />
-                </button>
-
+                <TodayCardBtn></TodayCardBtn>
             </div>
         </div>
     )
