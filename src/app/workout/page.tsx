@@ -5,8 +5,13 @@ import { oswald } from "../layout"
 import type { Workout } from "../../type/type"
 
 const getWorkoutData = async (): Promise<Workout[]> => {
-    const res = await fetch('https://api.api-store.workers.dev/api/fitlog')
-    return res.json()
+    try {
+        const res = await fetch('https://api.abcz.workers.dev/api/fitlog')
+        return res.json()
+    } catch (error) {
+        throw new Error("Error fetching workout data:")
+
+    }
 }
 const Workout = async () => {
     const workout = await getWorkoutData()
@@ -18,7 +23,7 @@ const Workout = async () => {
                     <h2 className={`font-bold text-3xl ${oswald.className} text-white`}>THE LIBRARY</h2>
                     <p className="text-[#9CA3AF] text-[14px]">Twelve lifts covering every major muscle group.</p>
                 </div>
-                <div className="grid grid-cols-3 mx-auto  gap-4">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto  gap-4">
                     {
                         workout.map(work => <WorkoutCard key={work.id} work={work}></WorkoutCard>)
                     }

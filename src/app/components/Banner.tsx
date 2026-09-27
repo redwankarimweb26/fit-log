@@ -6,15 +6,15 @@ import { oswald } from "../layout";
 
 const Banner = () => {
     return (
-        <section className="min-h-95 w-full rounded-2xl border border-[#272a31] bg-[#15171D] p-14 my-12 max-w-308 mx-auto">
-            <div className="flex h-full flex-col items-center justify-between gap-8 md:flex-row">
-                <div>
+        <section className="min-h-95 w-full rounded-2xl border border-[#272a31] bg-[#15171D] p-7 my-6 lg:p-14 lg:my-12 max-w-308 mx-auto">
+            <div className="flex h-full flex-col items-center justify-between gap-8 lg:gap-40 md:flex-row">
+                <div >
                     <p className="mb-5 text-[10px] font-bold mt text-[#C2F800]">
                         WORKOUT LIBRARY
                     </p>
 
                     <h1 className={`${oswald.className} text-4xl font-black text-white md:text-6xl my-6`}>
-                        TRAIN WITH INTENT. LOG <br />
+                        TRAIN WITH INTENT. LOG
                         EVERY SET.
                     </h1>
 
@@ -32,7 +32,7 @@ const Banner = () => {
                 </div>
 
 
-                <div className=" flex w-full justify-center md:w-[330px]">
+                <div className=" flex w-full justify-center  md:w-[330px]">
                     <Image
                         src={BannerImg}
                         alt="Workout "

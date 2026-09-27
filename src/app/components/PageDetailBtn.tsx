@@ -30,8 +30,6 @@ const PageDetailBtn = ({ work }: PageDetailBtnProps) => {
             toast.success("Successfully added to today's plan");
         }
     }
-    console.log("todaysPlan", todaysPlan)
-    console.log("saveLater", saveLater)
 
 
     const handleSaveForLater = () => {

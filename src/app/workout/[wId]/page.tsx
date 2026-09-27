@@ -10,7 +10,7 @@ import Image from "next/image"
 
 const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
     const { wId } = await params
-    const res = await fetch(`https://api.api-store.workers.dev/api/fitlog/${wId}`)
+    const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${wId}`)
     const work: Workout = await res.json()
 
     return (
@@ -18,7 +18,7 @@ const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
             <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
 
 
-                <div className="relative max-h-145 overflow-hidden rounded-lg">
+                <div className="relative h-80 overflow-hidden rounded-lg md:h-145">
                     <Image
                         src={work.image}
                         alt={work.name}
@@ -138,7 +138,7 @@ const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
                         </ol>
                     </div>
 
-                    <div className="mt-5 flex gap-3">
+                    <div className="mt-5 flex gap-3 md:justify-start justify-between">
 
 
                         <PageDetailBtn key={work.id} work={work}></PageDetailBtn>

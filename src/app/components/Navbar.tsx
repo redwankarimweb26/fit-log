@@ -28,19 +28,21 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <a className={`btn text-xl`}>
+                    <a className={` md:flex  hidden gap-3 text-center `}>
                         <Image
                             src={Logo}
                             alt="Logo"
-                            height={15}
-                            width={20}
+                            height={20}
+                            width={30}
+
                         ></Image>
-                        <span className={`${oswald.className}`}> Fit Log</span></a>
+                        <span className={`${oswald.className} text-2xl font-bold`}> Fit Log</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navLink}
                     </ul>
+
                 </div>
                 <div className="navbar-end flex gap-3">
 

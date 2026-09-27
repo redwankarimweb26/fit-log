@@ -13,12 +13,12 @@ const NavPlanBtn = () => {
     return (
         <>
             <Link href="/my-plan">
-                <span>Plan   <span className=" bg-[#C2F800] text-black rounded-full px-4 mx-2 py-2">{todaysPlan.length}</span></span>
+                <span>Plan   <span className=" bg-[#C2F800] text-black rounded-full md:px-4 px-2 py-1 mx-2 md:py-2">{todaysPlan.length}</span></span>
 
             </Link>
             <Link href="/my-plan">
 
-                <span>Save  <span className=" border border-gray-700 rounded-full px-4 ml-2 py-2">{saveLater.length}</span></span>
+                <span> Save  <span className=" border border-gray-700 rounded-full md:px-4 px-2 py-1 mx-2 md:py-2">{saveLater.length}</span></span>
             </Link>
         </>
     )
