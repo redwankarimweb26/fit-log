@@ -42,12 +42,12 @@ const MyPlan = () => {
         <div className="flex max-w-57 transition justify-between gap-1 rounded-2xl border border-[#252932] bg-[#171a20] p-1">
           <button
             onClick={() => setActiveTab("todays")}
-            className={`rounded-2xl text-xs px-2 sm:px-4 py-2 ${activeTab === "todays" ? "bg-[#1F242D] sm:font-bold text-white border-[#2B303D]" : "text-[#8A92A0]"}`} >Today's Plan</button>
+            className={`rounded-2xl text-xs px-4 py-2 ${activeTab === "todays" ? "bg-[#1F242D] font-bold text-white border-[#2B303D]" : "text-[#8A92A0]"}`} >Today's Plan</button>
 
           <button
             onClick={() => setActiveTab("saved")}
-            className={`rounded-2xl text-xs px2 sm:px-4 py-2 ${activeTab === "saved"
-              ? "bg-[#1F242D] sm:font-bold text-white border-[#2B303D]"
+            className={`rounded-2xl text-xs px-2 sm:px-4 py-2 ${activeTab === "saved"
+              ? "bg-[#1F242D] font-bold text-white border-[#2B303D]"
               : "text-[#8A92A0]"
               }`}
           >
@@ -56,9 +56,9 @@ const MyPlan = () => {
         </div>
         <div>
           <div className="my-4 flex ">
-            <span className="mt-3 mr-3  text-xs text-[#8A92A0]"> Sort By</span> <select
+            <span className="mt-3 mr-3 text-xs text-[#8A92A0]"> Sort By</span> <select
               onChange={(e) => setSortBy(e.target.value as 'rating' | 'calories' | 'duration')}
-              className="select w-20 sm:w-35 border border-[#252932] bg-[#14171E] text-xs  text-white focus:outline-none ">
+              className="select w-23 sm:w-35 border border-[#252932] bg-[#14171E] text-xs  text-white focus:outline-none ">
 
               <option value={'duration'}> Duration</option>
               <option value={'calories'}>Calories</option>
