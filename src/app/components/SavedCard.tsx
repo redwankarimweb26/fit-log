@@ -91,7 +91,7 @@ const SavedCard = ({ workout }: SavedCardProps) => {
 
             <div className="flex gap-5 flex-col md:flex-row md:justify-between w-full">
                 <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="relative h-24 w-38 overflow-hidden rounded-lg">
+                    <div className="relative h-24 w-34 sm:w-38 overflow-hidden rounded-lg">
                         <Image
                             src={workout.image}
                             alt={workout.name}
