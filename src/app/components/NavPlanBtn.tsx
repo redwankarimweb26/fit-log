@@ -13,12 +13,14 @@ const NavPlanBtn = () => {
     return (
         <>
             <Link href="/my-plan">
-                <span>Plan   <span className=" bg-[#C2F800] text-black rounded-full md:px-4 px-2 py-1 mx-2 md:py-2">{todaysPlan.length}</span></span>
+                <div className="flex items-center"><span>Plan   </span><span className=" bg-[#C2F800] text-black rounded-full md:px-3 px-2 py-0.5 mx-2 md:py-1">{todaysPlan.length}</span></div>
 
             </Link>
             <Link href="/my-plan">
+                <div className="flex items-center">
+                    <span> Save  </span><span className=" border border-gray-700 rounded-full  md:px-3 px-2 py-0.5 mx-2 md:py-1">{saveLater.length}</span>
 
-                <span> Save  <span className=" border border-gray-700 rounded-full md:px-4 px-2 py-1 mx-2 md:py-2">{saveLater.length}</span></span>
+                </div>
             </Link>
         </>
     )

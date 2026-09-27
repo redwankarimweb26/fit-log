@@ -21,18 +21,18 @@ const MyPlanBanner = () => {
     const savedCalories = saveLater.reduce((total, workout) => total + workout.caloriesBurned, 0);
     return (
         <>
-            <div className="bg-[#13161D] rounded-3xl border border-[#232732] p-10 grid grid-cols-3  my-7">
+            <div className="bg-[#13161D] rounded-3xl border border-[#232732] p-5 sm:p-10 grid grid-cols-3  my-7">
                 <div>
                     <p className="text-[12px] text-[#8A92A0] pb-2">Exercises</p>
-                    <span className={`font-bold text-4xl ${oswald.className} text-[#CCFF00]`}>{`${activeTab === "todays" ? todaysPlan.length : saveLater.length}`}</span>
+                    <span className={`font-bold text-2xl sm:text-4xl ${oswald.className} text-[#CCFF00]`}>{`${activeTab === "todays" ? todaysPlan.length : saveLater.length}`}</span>
                 </div>
                 <div className="border-l border-[#232732] pl-8">
                     <p className="text-[12px] text-[#8A92A0] pb-2">Minutes</p>
-                    <span className={`font-bold text-4xl ${oswald.className} text-white`}>{`${activeTab === "todays" ? todayDuration : savedDuration}`}</span>
+                    <span className={`font-bold text-2xl sm:text-4xl ${oswald.className} text-white`}>{`${activeTab === "todays" ? todayDuration : savedDuration}`}</span>
                 </div>
                 <div className="border-l border-[#232732] pl-8">
                     <p className="text-[12px] text-[#8A92A0] pb-2">Calories</p>
-                    <span className={`font-bold text-4xl ${oswald.className} text-white`}>{`${activeTab === "todays" ? todayCalories : savedCalories}`}</span>
+                    <span className={`font-bold text-2xl sm:text-4xl ${oswald.className} text-white`}>{`${activeTab === "todays" ? todayCalories : savedCalories}`}</span>
                 </div>
             </div>
         </>

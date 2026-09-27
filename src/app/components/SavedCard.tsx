@@ -36,7 +36,7 @@ const SavedCard = ({ workout }: SavedCardProps) => {
     }
     return (
 
-        <div className="flex items-center gap-4 rounded-xl border border-[#252932] bg-[#14171E] p-4">
+        <div className="flex items-center gap-4 rounded-xl border border-[#252932] bg-[#14171E] p2 sm:p-4">
 
 
             <div className="flex gap-5 flex-col md:flex-row md:justify-between w-full">

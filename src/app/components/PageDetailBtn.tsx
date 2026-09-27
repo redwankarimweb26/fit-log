@@ -45,12 +45,12 @@ const PageDetailBtn = ({ work }: PageDetailBtnProps) => {
 
     return (
         <>
-            <button onClick={handleAddToTodaysPlan} className=" btn flex items-center gap-2 rounded-md bg-[#CCff00] px-4 py-2 text-[14px] font-bold text-black transition hover:bg-[#c7ff33]">
+            <button onClick={handleAddToTodaysPlan} className=" btn flex items-center gap-2 rounded-md bg-[#CCff00] px-1.5 sm:px-4 py-2 text-[14px] font-bold text-black transition hover:bg-[#c7ff33]">
                 <LuCalendarPlus2 size={15} />
                 Add to today's plan
             </button>
 
-            <button onClick={handleSaveForLater} className=" btn flex items-center gap-2 rounded-md border border-[#343841] px-4 py-2 font-medium text-[14px] text-gray-300 transition hover:bg-[#1b1e24]">
+            <button onClick={handleSaveForLater} className=" btn flex items-center gap-2 rounded-md border border-[#343841] px-1.5 sm:px-4 py-2 font-medium text-[14px] text-gray-300 transition hover:bg-[#1b1e24]">
                 <FaRegBookmark size={15} />
                 Save for later
             </button>

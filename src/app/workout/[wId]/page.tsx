@@ -14,7 +14,7 @@ const page = async ({ params }: { params: Promise<{ wId: string }> }) => {
     const work: Workout = await res.json()
 
     return (
-        <div className="mx-auto max-w-308 mt-4 p-4 md:p-5">
+        <div className="mx-auto max-w-308 mt-4 md:p-5">
             <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
 
 

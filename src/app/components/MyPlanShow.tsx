@@ -56,9 +56,9 @@ const MyPlan = () => {
         </div>
         <div>
           <div className="my-4 flex ">
-            <span className="mt-3 mr-3 text-xs text-[#8A92A0]"> Sort By</span> <select
+            <span className="mt-3 mr-3  text-xs text-[#8A92A0]"> Sort By</span> <select
               onChange={(e) => setSortBy(e.target.value as 'rating' | 'calories' | 'duration')}
-              className="select w-35 border border-[#252932] bg-[#14171E] text-xs  text-white focus:outline-none ">
+              className="select w-25 sm:w-35 border border-[#252932] bg-[#14171E] text-xs  text-white focus:outline-none ">
 
               <option value={'duration'}> Duration</option>
               <option value={'calories'}>Calories</option>
