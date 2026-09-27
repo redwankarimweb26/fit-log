@@ -16,7 +16,7 @@ const TodaysCard = ({ workout }: TodaysCardProps) => {
 
 
             <div className="flex gap-5 flex-col md:flex-row md:justify-between w-full">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                     <div className="relative h-24 w-38 overflow-hidden rounded-lg">
                         <Image
                             src={workout.image}
@@ -34,7 +34,7 @@ const TodaysCard = ({ workout }: TodaysCardProps) => {
                             {workout.equipment}
                         </p>
 
-                        <div className="mt-1 flex items-center gap-3 text-xs text-[#B8BEC8]">
+                        <div className="mt-1 flex items-center gap-2 sm:gap-3 text-xs text-[#B8BEC8]">
 
 
                             <span className="flex items-center gap-1">
