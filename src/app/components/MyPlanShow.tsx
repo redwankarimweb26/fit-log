@@ -42,11 +42,11 @@ const MyPlan = () => {
         <div className="flex max-w-57 transition justify-between gap-1 rounded-2xl border border-[#252932] bg-[#171a20] p-1">
           <button
             onClick={() => setActiveTab("todays")}
-            className={`rounded-2xl text-xs px-4 py-2 ${activeTab === "todays" ? "bg-[#1F242D] font-bold text-white border-[#2B303D]" : "text-[#8A92A0]"}`} >Today's Plan</button>
+            className={`rounded-2xl text-xs px-3 sm:px-4 py-2 ${activeTab === "todays" ? "bg-[#1F242D] font-bold text-white border-[#2B303D]" : "text-[#8A92A0]"}`} >Today's Plan</button>
 
           <button
             onClick={() => setActiveTab("saved")}
-            className={`rounded-2xl text-xs px-2 sm:px-4 py-2 ${activeTab === "saved"
+            className={`rounded-2xl text-xs px-3 sm:px-4 py-2 ${activeTab === "saved"
               ? "bg-[#1F242D] font-bold text-white border-[#2B303D]"
               : "text-[#8A92A0]"
               }`}
