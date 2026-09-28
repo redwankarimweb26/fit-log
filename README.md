@@ -34,3 +34,6 @@ Mark completed workouts as done and keep track of your workout progress.
 ### 5. Responsive Design
 
 The application is fully responsive and provides a smooth experience across mobile, tablet, and desktop devices.
+
+## Live link :
+https://fit-log-kappa-eosin.vercel.app/
